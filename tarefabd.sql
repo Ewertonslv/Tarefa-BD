@@ -8,8 +8,8 @@ CREATE DATABASE dml_db;
 USE dml_db;
 
 CREATE TABLE empregado(
-	matricula int NOT NULL AUTO_INCREMENT,
-    nome varchar(45) NOT NULL,
+	matricula int(11) NOT NULL,
+    nome varchar(45) NOT NULL, 
     endereco varchar(100) NOT NULL,
     salario INT NOT NULL,
     supervisor INT NOT NULL, 
