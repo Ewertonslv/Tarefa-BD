@@ -9,42 +9,42 @@ USE dml_db;
 
 CREATE TABLE empregado(
 	matricula int(11) NOT NULL,
-    nome varchar(45) NOT NULL, 
-    endereco varchar(100) NOT NULL,
-    salario INT NOT NULL,
-    supervisor INT NOT NULL, 
-    depto INT NOT NULL,
+    nome varchar(15) NOT NULL, 
+    endereco varchar(30) DEFAULT NULL,
+    salario decimal(10,2) DEFAULT NULL,
+    supervisor INT(11) DEFAULT NULL, 
+    depto INT(11) DEFAULT NULL,
     PRIMARY KEY (matricula)
 );
 
 CREATE TABLE departamento(
   coddep int NOT NULL,
-  nome varchar(45) NOT NULL,
-  gerente int NOT NULL,
-  dataini DATE,	
+  nome varchar(15) NOT NULL,
+  gerente int(11) DEFAULT NULL,
+  dataini DATE DEFAULT NULL,	
   PRIMARY KEY (coddep)
 );
 
 CREATE TABLE projeto(
-	codproj INT NOT NULL AUTO_INCREMENT,
+	codproj INT(11) NOT NULL AUTO_INCREMENT,
     nome VARCHAR (45) NOT NULL,
-    local VARCHAR (45) NOT NULL,
-    depart INT NOT NULL,
-	PRIMARY KEY (codproj)
+    local VARCHAR (15) DEFAULT NULL,
+    depart INT(11) DEFAULT NULL,
+	PRIMARY KEY (codproj)	
 );
 
 CREATE TABLE alocacao( 
-    matric INT NOT NULL AUTO_INCREMENT,
+    matric INT(11) NOT NULL AUTO_INCREMENT,
     codigop INT NOT NULL,
     horas INT NOT NULL,
     PRIMARY KEY (matric, codigop)
 );
 
 CREATE TABLE dependente(
-	coddepend INT NOT NULL AUTO_INCREMENT,
-    matricula INT NOT NULL,
-    nome VARCHAR (45) NOT NULL,
-    sexo VARCHAR (10) NOT NULL,
+	coddepend INT(11) NOT NULL AUTO_INCREMENT,
+    matricula INT(11) NOT NULL,
+    nome VARCHAR (45) DEFAULT NULL,
+    sexo VARCHAR (10) DEFAULT NULL,
 	PRIMARY KEY (coddepend)
 );
 
