@@ -1,9 +1,9 @@
 
-INSERT INTO empregado(nome , endereco, salario, supervisor, depto)VALUES('João da silva',"Caico", 300, 5, 1);
-INSERT INTO empregado(nome , endereco, salario, supervisor, depto)VALUES('Maria Firmina',"Caico", 400, 1, 2);
-INSERT INTO empregado(nome , endereco, salario, supervisor, depto)VALUES('Francisco pedro',"Caico", 350, 2, 3);
-INSERT INTO empregado(nome , endereco, salario, supervisor, depto)VALUES('Manoel Azevedo',"Caico", 360, 3, 4);
-INSERT INTO empregado(nome , endereco, salario, supervisor, depto)VALUES('Adalberto pereira',"Caico", 600, 4, 5);
+INSERT INTO empregado(matricula, nome, endereco, salario, supervisor, depto)VALUES(2354, 'João da silva',"Caico", 300, 5, 1);
+INSERT INTO empregado(matricula, nome, endereco, salario, supervisor, depto)VALUES(1231, 'Maria Firmina',"Caico", 400, 1, 2);
+INSERT INTO empregado(matricula, nome, endereco, salario, supervisor, depto)VALUES(5643, 'Francisco pedro',"Caico", 350, 2, 3);
+INSERT INTO empregado(matricula, nome, endereco, salario, supervisor, depto)VALUES(3245, 'Manoel Azevedo',"Caico", 360, 3, 4);
+INSERT INTO empregado(matricula, nome, endereco, salario, supervisor, depto)VALUES(2343, 'Adalberto pereira',"Caico", 600, 4, 5);
 
 
 INSERT INTO departamento(coddep, nome, gerente, dataini)VALUES(1,'DCT', 1, '2019-12-10');
